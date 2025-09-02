@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <img
             className="w-10 h-10 object-contain rounded-lg shadow-md"
-            src="src/assets/1.png"
+            src="src/assets/image.png"
             alt="logo"
           />
           <h1 className="text-2xl font-extrabold tracking-wide">
