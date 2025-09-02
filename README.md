@@ -29,7 +29,7 @@ Follow these steps to set up **StudyBuddy** on your local machine:
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/StudyBuddy.git
+git clone https:https://github.com/shubhamsingh7575/Study-Buddy.git
 cd StudyBuddy
 ```
 
