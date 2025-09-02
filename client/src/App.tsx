@@ -57,7 +57,7 @@ const TopicDetail: React.FC<{detail: string}> = (props: {
   detail: TrustedHTML
 }) => {
   return (
-    <div className="fixed top-4 right-4 bg-gray-800 text-white shadow-lg p-4 rounded-lg z-50 max-w-120 overflow-scroll h-[90vh] mt-8" dangerouslySetInnerHTML={{
+    <div className="fixed top-4 right-4 bg-gray-800 text-white shadow-lg p-4 rounded-lg z-50 max-w-120 overflow-scroll h-[90vh] mt-14" dangerouslySetInnerHTML={{
       __html: props.detail
     }} onClick={(e) => e.stopPropagation()}/>
   );
@@ -77,7 +77,7 @@ const TreeNode:React.FC<{node: node, level: number}> = ({ node, level = 0 }) => 
 
 
     return (
-        <div className={`border p-2 rounded-lg shadow-sm m-2 flex-1 ${colorClass}`} onClick={async () => {
+        <div className={`border p-2 rounded-lg shadow-sm m-2 flex-1 text-black ${colorClass}`} onClick={async () => {
           if(!node.subtopics || node.subtopics.length == 0) {
             setDetail('Preparing Resources...')
             const topic_detail = await showResources(node.name)
@@ -142,7 +142,7 @@ function TopicInput() {
 
   return (
     <>
-      <div className='flex flex-col justify-center items-center h-[25vh] text-white'>
+      <div className='flex flex-col justify-center items-center h-[25vh] text-white mt-40'>
         <div className='flex justify-center h-12 gap-5'>
           <input className='w-80 p-4 text-lg border-2 border-blue-500 rounded-[8px] shadow-lg focus:ring-4 focus:ring-blue-300 focus:outline-none' type='text' name='topic' placeholder='What do you want to study?' onChange={(e) => setTopic(e.target.value)} />
           <Button onClick={ async () => {

@@ -30,7 +30,7 @@ const Register: React.FC = () => {
     try {
       setLoading(true);
       await axios.post("http://localhost:5000/api/auth/register", data);
-      alert("Registration successful! Check your email to verify.");
+      alert("Registration successful!.");
       navigate("/login");
     } catch (error) {
       alert("Registration failed. Try again.");
