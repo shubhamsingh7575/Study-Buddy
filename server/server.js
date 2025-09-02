@@ -16,7 +16,7 @@ const genAiRoutes = require("./routes/genAiRoutes.js");
 const app = express();
 
 // Middleware
-app.use(cors({ origin: 'http://localhost:5173', credentials: true })); // Adjust based on frontend URL
+app.use(cors()); // Adjust based on frontend URL
 app.use(express.json()); // Parse JSON bodies
 app.use(cookieParser()); // Parse cookies
 
