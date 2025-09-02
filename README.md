@@ -2,7 +2,7 @@
 # 📚 StudyBuddy - AI-Powered Learning Roadmap Generator
 
 **StudyBuddy** is an **AI-powered web app** that generates **personalized, step-by-step learning roadmaps** for any topic you provide.  
-Using the **Google Gemini API**, it creates structured guides and presents them in a clean, easy-to-follow layout, making learning more efficient and organized.
+Using the **Google Gemini API**, it creates structured guides and presents them in a clean, easy-to-follow layout and making learning more efficient and organized.
 
 ---
 
