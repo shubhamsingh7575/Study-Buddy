@@ -29,7 +29,7 @@ const Register: React.FC = () => {
   const onSubmit = async (data: any) => {
     try {
       setLoading(true);
-      await axios.post("http://localhost:5000/api/auth/register", data);
+      await axios.post(`${import.meta.env.VITE_BACKEND_HOST}/api/auth/register`, data);
       alert("Registration successful!.");
       navigate("/login");
     } catch (error) {
@@ -94,7 +94,7 @@ const Login: React.FC = () => {
   const onSubmit = async (data: any) => {
     try {
       setLoading(true);
-      await axios.post("http://localhost:5000/api/auth/login", data);
+      await axios.post(`${import.meta.env.VITE_BACKEND_HOST}/api/auth/login`, data);
         //   alert("Login successful!");
         Swal.fire({
             title: "Success!",
